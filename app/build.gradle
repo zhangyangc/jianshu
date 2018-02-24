@@ -30,6 +30,9 @@ def baseVersionName = versionMajor + '.' + versionMinor + '.' + versionPatch
 def port = 80
 
 android {
+  lintOptions {
+    abortOnError false
+  }
   compileSdkVersion 25
   buildToolsVersion "24.0.1"
 
